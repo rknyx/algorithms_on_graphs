@@ -30,44 +30,6 @@ def dps(adj, fr, on_stack):
     return False
 
 
-# def dps_non_recursive2(adj, fr):
-#     global visited
-#     local_visited = arr('b', repeat(0, len(visited)))
-#     stack = deque()
-#     stack.append(fr)
-#     visited[fr] = 1
-#     while len(stack) > 0:
-#         v = stack.pop()
-#         if local_visited[v] == 1:
-#             return True
-#         local_visited[v] = 1
-#         visited[v] = 1
-#         stack.extend(reversed(adj[v]))
-#
-
-
-# def dps_non_recursive(adj, fr):
-#     stack = deque()
-#     stack.append(fr)
-#     while len(stack) > 0:
-#         vertex = stack[0]
-#         if visited[vertex] == 1:
-#             if vertex in stack:
-#                 return True
-#             stack.pop()
-#         else:
-#             visited[vertex] = 1
-#
-#
-#         if visited[vertex] == 1:
-#             stack.pop()
-#         elif vertex in stack:
-#             return True
-#         else:
-#             visited[vertex] = 1
-#             stack.pop()
-#             stack.extend(adj[vertex])
-
 inp_0 = """5 7
 1 2
 2 3
